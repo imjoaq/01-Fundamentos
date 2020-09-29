@@ -11,10 +11,21 @@ juegos.forEach((elemento, indice, arr) => {
 });
 
 let nuevaLongitud = juegos.push('F-Zero');
-console.log({ nuevaLongitud });
+console.log({ nuevaLongitud, juegos });
 
 nuevaLongitud = juegos.unshift('Fire-Emblem');
-console.log({ nuevaLongitud });
+console.log({ nuevaLongitud, juegos });
 
-let juegoBorrado = juegos.pop('F-Zero');
+let juegoBorrado = juegos.pop();
 console.log({ juegoBorrado, juegos });
+
+let pos = 1;
+
+console.log(juegos);
+let juegosBorrados = juegos.splice(pos, 2);
+console.log({juegosBorrados, juegos});
+
+let metroidIndex = juegos.indexOf('Metroid'); //CaseSensitive
+console.log({metroidIndex});
+
+//TODO: Referencia
