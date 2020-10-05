@@ -17,15 +17,15 @@ nuevaLongitud = juegos.unshift('Fire-Emblem');
 console.log({ nuevaLongitud, juegos });
 
 let juegoBorrado = juegos.pop();
-console.log({ juegoBorrado, juegos });
+console.log({ 'El juego borrado es': juegoBorrado, 'Del arreglo juegos': juegos });
 
 let pos = 1;
 
 console.log(juegos);
 let juegosBorrados = juegos.splice(pos, 2);
-console.log({juegosBorrados, juegos});
+console.log({ juegosBorrados, juegos });
 
 let metroidIndex = juegos.indexOf('Metroid'); //CaseSensitive
-console.log({metroidIndex});
+console.log({ metroidIndex });
 
 //TODO: Referencia
