@@ -41,6 +41,15 @@ personaje.casado = true;
 const entriesPares = Object.entries(personaje);
 console.log(entriesPares);
 
+Object.freeze(personaje);
+
+personaje.dinero = 10000000000;
+personaje.casado = false;
+personaje.direccion.ubicacion = 'Costa Rica';
+
 console.log(personaje);
 
-Object.freeze(personaje);
+const propiedades = Object.getOwnPropertyNames(personaje);
+const valores = Object.values(personaje);
+const entradas = Object.entries(personaje);
+console.log({ propiedades, valores });
