@@ -12,4 +12,3 @@ console.warn('Not o la negacion');
 console.log(true); // true
 console.log(!true); // false
 console.log(!false); // true
-sdsdgsd;
